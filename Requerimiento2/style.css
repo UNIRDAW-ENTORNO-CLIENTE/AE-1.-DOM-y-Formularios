@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 2px;
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    width: 500px;
+    background-color: rgb(0, 166, 255);
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 0px;
+    font-family: 'calibri';
+    color: white;
+    font-size: 50px;
+}
+
+.formulario-registro {
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 0px;
+    font-family: 'calibri';
+    color: black;
+    border-color: rgb(0, 166, 255);
+    border-style: solid;
+}    
+
+
+.recordatorio{
+    color: grey;
+}
+
+
+.boton{
+    float: right;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 166, 255);
+    padding: 5px;
+    border-color: rgb(0, 166, 255);;
+}
