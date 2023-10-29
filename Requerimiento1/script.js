@@ -77,11 +77,11 @@ function GeneraForm() {
   
     // Agregar dos imágenes
     let img1 = document.createElement("img");
-    img1.setAttribute("src", "/img/img1.jpg"); 
+    img1.setAttribute("src", "img/img1.jpg"); 
     cabecera.appendChild(img1);
   
     let img2 = document.createElement("img");
-    img2.setAttribute("src", "/img/img2.jpg"); 
+    img2.setAttribute("src", "img/img2.jpg"); 
     cabecera.appendChild(img2);
   
     let espacio1 = document.createElement("br");
