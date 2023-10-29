@@ -1,13 +1,13 @@
 // Función que se ejecutará cuando la ventana esté completamente cargada
 window.onload = function () {
     // Obtén los elementos del formulario
-    var nombreInput = document.getElementById("nombre");
-    var direccionInput = document.getElementById("direccion");
-    var movilInput = document.getElementById("movil");
-    var emailInput = document.getElementById("email");
-    var pizzaRadios = document.querySelectorAll('input[type="radio"][name="Pizza"]');
-    var ingredientCheckboxes = document.querySelectorAll('input[type="checkbox"][name="Condiciones"]    ');
-    var botonProcesarPedido = document.querySelector('.boton');
+    let nombreInput = document.getElementById("nombre");
+    let direccionInput = document.getElementById("direccion");
+    let movilInput = document.getElementById("movil");
+    let emailInput = document.getElementById("email");
+    let pizzaRadios = document.querySelectorAll('input[type="radio"][name="Pizza"]');
+    let ingredientCheckboxes = document.querySelectorAll('input[type="checkbox"][name="Condiciones"]    ');
+    let botonProcesarPedido = document.querySelector('.boton');
 
     // Agrega un evento al botón para procesar el pedido
     botonProcesarPedido.addEventListener("click", function () {
@@ -18,8 +18,8 @@ window.onload = function () {
         }
 
         // Verifica que se haya seleccionado un tamaño de pizza
-        var pizzaSeleccionada = false;
-        for (var i = 0; i < pizzaRadios.length; i++) {
+        let pizzaSeleccionada = false;
+        for (let i = 0; i < pizzaRadios.length; i++) {
             if (pizzaRadios[i].checked) {
                 pizzaSeleccionada = true;
                 break;
@@ -31,8 +31,8 @@ window.onload = function () {
         }
 
         // Verifica que se haya seleccionado al menos un ingrediente
-        var ingredientesSeleccionados = false;
-        for (var i = 0; i < ingredientCheckboxes.length; i++) {
+        let ingredientesSeleccionados = false;
+        for (let i = 0; i < ingredientCheckboxes.length; i++) {
             if (ingredientCheckboxes[i].checked) {
                 ingredientesSeleccionados = true;
                 break;
@@ -44,7 +44,7 @@ window.onload = function () {
         }
 
         // Cálculo del precio de la pizza según el tamaño
-        var precioPizza = 0;
+        let precioPizza = 0;
         if (pizzaRadios[0].checked) {
             precioPizza = 5;
         } else if (pizzaRadios[1].checked) {
@@ -63,7 +63,7 @@ window.onload = function () {
 
 
         //Calcula el precio total del pedido
-        var precioTotal = precioPizza + precioIngredientes; 
+        let precioTotal = precioPizza + precioIngredientes; 
         
         // Muestra el precio total al usuario
         alert("El precio total del pedido es: " + precioTotal + "€");
