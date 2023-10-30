@@ -1,48 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Requisito 2</title>
-
-    <script src="script.js"></script>
-</head>
-<body>
-    
-    <h1 class="titulo"><center>Formulario</center></h1>
-    <form class="formulario-registro">
-        <b>Nombre:</b> <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-        <br><br>
-        <b>Dirección:</b> <input type="text" name="direccion" id="direccion">
-        <br><br>
-        <b>Número de móvil:</b>
-        <!-- Hemos incluido un desplegable con la opción "+34E" pudiendo añadir más opciones -->
-        <select>
-            <option>+34 E</option>
-        </select>
-        <input type="tel" name="movil" id="movil">
-        <br><br>
-        <b>Email:</b> <input type="email" name="email" id="email">
-        <br><br>
-        <p><b>Tamaño de la pizza:</b></p> 
-        <input type="radio" name="Pizza"/>Pequeña
-        <input type="radio" name="Pizza"/>Mediana
-        <input type="radio" name="Pizza"/>Grande
-        <br><br>
-        
-        <!-- Checkbox de los ingredientes -->
-        <p><b>Ingredientes:</b></p>
-        <input type="checkbox" name="Condiciones"/>Jamón</a>
-        <input type="checkbox" name="Condiciones"/>Champiñones</a>
-        <input type="checkbox" name="Condiciones"/>Piña</a>
-        <input type="checkbox" name="Condiciones"/>Burrata</a>
-        <!-- ¡Procesar pedido! es un botón para enviar el formulario -->
-        <br>
-        <button class="boton" type="button">Procesar pedido</button>
-        <br>
-    </form>
-</body>
+<html>
+    <head>
+        <title>PIZZA EVA TOLEDO</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="javaScript.js"></script>
+    </head>
+    <body>
+        <!--CREAMOS EL FORMULARIO-->
+        <form id="formulario" method="post">
+            <table>
+                <tr>
+                    <th><label>Nombre</label></th>
+                    <th><input type="text" id="nombre"/></th>
+                </tr>
+                <tr>
+                    <th><label>Direccion</label></th>
+                    <th><input type="text" id="direccion"/></th>
+                </tr>
+                <tr>
+                    <th><label>Telefono</label></th>
+                    <th><input type="text" id="telefono"/></th>
+                </tr>
+                <tr >
+                <tr>
+                    <th><label>Email</label></th>
+                    <th><input type="text" id="email"/></th>
+                </tr>
+                <tr>
+                    <th>Tamaño</th>
+                    <th>
+                        <input type="radio" id="pequeña" name="Tamaño" Value="Pequeña">Pequeña</input>
+                        <input type="radio" id="mediana" name="Tamaño" Value="Mediana">Mediana</input>
+                        <input type="radio" id="grande" name="Tamaño" Value="Grande">Grande</input>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th><input type="checkbox" id="pepino" name="ingrediente">Pepino
+                    <input type="checkbox" id="cebolla" name="ingrediente">Cebolla
+                    <input type="checkbox" id="algas" name="ingrediente">Algas
+                    <input type="checkbox" id="gusanos" name="ingrediente">Gusanos</th>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="submit" value="Mandar Formulario"></th>
+                </tr>
+            </table>
+        </form>
+    </body>
 </html>
